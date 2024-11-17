@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+{% for tour in tours %}
+    <div class="form-group">
+        <h1>{{ tour.title }}</h1>
+        <p>{{ tour.price }}</p>
+        <img src="{{ tour.image_url }}">
+    </div>
+{% endfor %}
+
+{% endblock %}
